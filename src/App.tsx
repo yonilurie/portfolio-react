@@ -34,8 +34,80 @@ function App() {
 				<button onClick={toggleContact}>contact me</button>
 			</nav>
 			<section className="who-am-i">
-				<h1>yonatan lurie</h1>
-				<h2>full stack software engineer</h2>
+				<div>
+					<h1>yonatan lurie</h1>
+					<h2>full stack software engineer</h2>
+				</div>
+				<p>
+					After graduating from the University of Washington with a
+					B.A. majoring in Psychology, I changed career paths and
+					began studying software development. I attended the App
+					Academy boot camp and gained 1000+ hours of experience
+					learning about computer science and creating multiple
+					full-stack projects.
+				</p>
+			</section>
+			<section className="skills">
+				<h3>my skills</h3>
+				<p>
+					JavaScript, TypeScript, Node.js, React.js, Redux, Express.js
+				</p>
+				<p>Python, Flask, SQLAlchemy, Sequelize, Postgres, REST</p>
+				<p>
+					Collaborating in a team setting, Working with API's, Agile
+					development, Quick Learner{" "}
+				</p>
+			</section>
+			<section className="projects">
+				<h3>projects</h3>
+				<div className="single-project">
+					<p>Name</p>
+					<div>
+						<img />
+						<div>Tools</div>
+						<div>description</div>
+					</div>
+				</div>
+				<div className="single-project">
+					<p>Name</p>
+					<div>
+						<img />
+						<div>Tools</div>
+						<div>description</div>
+					</div>
+				</div>
+				<div className="single-project">
+					<p>Name</p>
+					<div>
+						<img />
+						<div>Tools</div>
+						<div>description</div>
+					</div>
+				</div>
+				<div className="single-project">
+					<p>Name</p>
+					<div>
+						<img />
+						<div>Tools</div>
+						<div>description</div>
+					</div>
+				</div>
+				<div className="single-project">
+					<p>Name</p>
+					<div>
+						<img />
+						<div>Tools</div>
+						<div>description</div>
+					</div>
+				</div>
+				<div className="single-project">
+					<p>Name</p>
+					<div>
+						<img />
+						<div>Tools</div>
+						<div>description</div>
+					</div>
+				</div>
 			</section>
 		</div>
 	);
@@ -52,9 +124,9 @@ function Contact({ toggleContact }) {
 				</button>
 				<h2>Contact me</h2>
 				<form action="https://formspree.io/f/xgeqapga" method="POST">
-					<label htmlFor="email">Your email:</label>
+					<label htmlFor="email">Your email</label>
 					<input type="email" name="email" id="email" required />
-					<label htmlFor="message">Your message:</label>
+					<label htmlFor="message">Your message</label>
 					<textarea name="message" id="message" required></textarea>
 					<button type="submit">Send</button>
 				</form>

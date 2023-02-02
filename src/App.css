@@ -6,6 +6,7 @@ nav {
 	color: white;
 	font-size: 1rem;
 	padding: 20px;
+	animation: 0.25s fade-in ease-in-out;
 }
 
 a {
@@ -31,14 +32,14 @@ button:hover {
 .contact-container {
 	position: absolute;
 	z-index: 2;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.9);
 	width: 100%;
 	height: 100%;
 	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	animation: 1s fade-in;
+	animation: 0.75s fade-in ease-in-out;
 }
 
 .contact {
@@ -47,12 +48,62 @@ button:hover {
 	padding: 20px;
 	z-index: 3;
 	position: relative;
-	animation: 1.5s fade-in;
+	animation: 1s fade-in ease-in-out;
 }
 
 .fade-out {
 	animation: 500ms fade-out;
 	opacity: 0;
+}
+
+.exit-contact {
+	position: absolute;
+	right: 2%;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+h1,
+h2,
+h3 {
+	font-size: 1.5rem;
+	color: white;
+}
+
+.who-am-i {
+	padding: 80px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	animation: 0.75s fade-in ease-in-out;
+}
+
+.who-am-i > p {
+	font-size: 1rem;
+	max-width: 800px;
+}
+
+.skills {
+	padding: 80px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	animation: 1.25s fade-in ease-in-out;
+}
+
+.projects {
+	padding: 80px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	animation: 1.5s fade-in ease-in-out;
 }
 
 @keyframes fade-in {
@@ -72,25 +123,4 @@ button:hover {
 	100% {
 		opacity: 0;
 	}
-}
-
-.exit-contact {
-	position: absolute;
-	right: 2%;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-}
-
-h1,
-h2 {
-	color: white;
-}
-
-.who-am-i {
-	padding: 20px;
-	font-size: 1.5rem;
 }
