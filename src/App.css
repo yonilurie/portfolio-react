@@ -1,41 +1,44 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.tabs-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 10px;
+	width: 30vw;
+	max-width: 200px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.MuiDrawer-paper {
+	background-color: var(--dark-grey) !important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabs-container > button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	border-radius: 8px;
+	width: 50%;
+	font-size: 1.5rem;
+	transition: 200ms ease-in-out;
+  text-align: start;
+}
+.tabs-container > button:hover {
+	color: var(--light-blue);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.drawer-toggle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+
+	border: none;
+	cursor: pointer;
+	transition: 200ms ease-in-out;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.drawer-toggle:hover {
+	color: var(--light-blue);
 }
