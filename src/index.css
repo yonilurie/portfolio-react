@@ -1,8 +1,6 @@
 :root {
-	--dark-grey: rgb(44, 51, 51);
-	--dark-blue: rgb(57, 91, 100);
-	--light-blue: rgb(165, 201, 202);
-	--light-grey: rgb(231, 246, 242);
+	--dark-black: #0d0d0d;
+	--lighter-black: #131313;
 }
 
 /* 1. Use a more-intuitive box-sizing model. */
@@ -15,7 +13,7 @@
 */
 * {
 	margin: 0;
-    font-family: 'roboto';
+	font-family: "roboto";
 }
 /*
   3. Allow percentage-based heights in the application
@@ -23,7 +21,7 @@
 html,
 body {
 	height: 100%;
-	background-color: var(--dark-grey);
+	background-image: linear-gradient(var(--dark-black), var(--lighter-black));
 }
 /*
   Typographic tweaks!
