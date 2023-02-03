@@ -21,6 +21,7 @@
 html,
 body {
 	background-image: linear-gradient(var(--dark-black), var(--lighter-black));
+    /* height: 100vh; */
 }
 /*
   Typographic tweaks!

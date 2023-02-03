@@ -9,6 +9,13 @@ nav {
 	animation: 0.25s fade-in ease-in-out;
 }
 
+.nav-item:hover {
+	transition: ease-in-out;
+	transition-duration: 500ms;
+	transform: translateY(2px);
+	color: grey;
+}
+
 a {
 	color: white;
 	text-decoration: none;
@@ -75,7 +82,7 @@ h3 {
 }
 
 .who-am-i {
-	padding: 80px;
+	padding: 40px;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -89,17 +96,21 @@ h3 {
 }
 
 .skills {
-	padding: 80px;
+	padding: 40px;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	row-gap: 20px;
 	animation: 1.25s fade-in ease-in-out;
 }
 
 .skill-images {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 500px;
+	margin: auto;
 }
 
 .skill-images > :nth-child(1) {
@@ -111,9 +122,38 @@ h3 {
 .skill-images > :nth-child(3) {
 	animation: 1.25s drop-down ease-in-out;
 }
+.skill-images > :nth-child(4) {
+	animation: 0.75s drop-down ease-in-out;
+}
+.skill-images > :nth-child(5) {
+	animation: 1s drop-down ease-in-out;
+}
+.skill-images > :nth-child(6) {
+	animation: 1.25s drop-down ease-in-out;
+}
+.skill-images > :nth-child(7) {
+	animation: 0.75s drop-down ease-in-out;
+}
+.skill-images > :nth-child(8) {
+	animation: 1s drop-down ease-in-out;
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(4deg)
+		brightness(103%) contrast(103%);
+}
+.skill-images > :nth-child(9) {
+	animation: 1.25s drop-down ease-in-out;
+}
+.skill-images > :nth-child(10) {
+	animation: 0.75s drop-down ease-in-out;
+}
+.skill-images > :nth-child(11) {
+	animation: 1s drop-down ease-in-out;
+}
+.skill-images > :nth-child(12) {
+	animation: 1.25s drop-down ease-in-out;
+}
 
 .projects {
-	padding: 80px;
+	padding: 40px;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -122,8 +162,8 @@ h3 {
 }
 
 .img-skill {
-	width: 100px;
-	height: auto;
+	width: 150px;
+	height: 150px;
 }
 @keyframes hover-over {
 	0% {

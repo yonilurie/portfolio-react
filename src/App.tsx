@@ -22,16 +22,19 @@ function App() {
 		<div className="App" aria-hidden={showContact}>
 			{showContact && <Contact toggleContact={toggleContact} />}
 			<nav>
-				<div>
-					<a
-						href="/src/assets/YonatanLurieResume.pdf"
-						target="_blank"
-						referrerPolicy="no-referrer"
-					>
-						resume
-					</a>
-				</div>
-				<button onClick={toggleContact}>contact me</button>
+				{/* <div> */}
+				<a
+					href="/src/assets/YonatanLurieResume.pdf"
+					target="_blank"
+					referrerPolicy="no-referrer"
+					className="nav-item"
+				>
+					resume
+				</a>
+				{/* </div> */}
+				<button onClick={toggleContact} className="nav-item">
+					contact me
+				</button>
 			</nav>
 			<section className="who-am-i">
 				<div>
@@ -51,11 +54,41 @@ function App() {
 				<h3>my skills</h3>
 				<div className="skill-images">
 					<img src="/src/assets/js.png" className="img-skill"></img>
+					<img src="/src/assets/css.png" className="img-skill"></img>
+					<img src="/src/assets/html.png" className="img-skill"></img>
 					<img
 						src="/src/assets/python.png"
 						className="img-skill"
 					></img>
 					<img src="/src/assets/post.png" className="img-skill"></img>
+					<img
+						src="/src/assets/flask.png"
+						className="img-skill"
+					></img>
+					<img
+						src="/src/assets/sequelize.png"
+						className="img-skill"
+					></img>
+					<img
+						src="/src/assets/sqla.png"
+						className="img-skill"
+					></img>
+					<img
+						src="/src/assets/react.png"
+						className="img-skill"
+					></img>
+					<img
+						src="/src/assets/redux.png"
+						className="img-skill"
+					></img>
+					<img
+						src="/src/assets/node.png"
+						className="img-skill"
+					></img>
+					<img
+						src="/src/assets/express.png"
+						className="img-skill"
+					></img>
 				</div>
 			</section>
 			<section className="projects">
