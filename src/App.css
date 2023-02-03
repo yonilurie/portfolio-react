@@ -97,6 +97,21 @@ h3 {
 	animation: 1.25s fade-in ease-in-out;
 }
 
+.skill-images {
+	display: flex;
+	justify-content: space-around;
+}
+
+.skill-images > :nth-child(1) {
+	animation: 0.75s drop-down ease-in-out;
+}
+.skill-images > :nth-child(2) {
+	animation: 1s drop-down ease-in-out;
+}
+.skill-images > :nth-child(3) {
+	animation: 1.25s drop-down ease-in-out;
+}
+
 .projects {
 	padding: 80px;
 	color: white;
@@ -104,6 +119,33 @@ h3 {
 	flex-direction: column;
 	gap: 20px;
 	animation: 1.5s fade-in ease-in-out;
+}
+
+.img-skill {
+	width: 100px;
+	height: auto;
+}
+@keyframes hover-over {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes drop-down {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
 }
 
 @keyframes fade-in {

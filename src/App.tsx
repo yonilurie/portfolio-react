@@ -19,7 +19,7 @@ function App() {
 	};
 
 	return (
-		<div className="App">
+		<div className="App" aria-hidden={showContact}>
 			{showContact && <Contact toggleContact={toggleContact} />}
 			<nav>
 				<div>
@@ -49,14 +49,14 @@ function App() {
 			</section>
 			<section className="skills">
 				<h3>my skills</h3>
-				<p>
-					JavaScript, TypeScript, Node.js, React.js, Redux, Express.js
-				</p>
-				<p>Python, Flask, SQLAlchemy, Sequelize, Postgres, REST</p>
-				<p>
-					Collaborating in a team setting, Working with API's, Agile
-					development, Quick Learner{" "}
-				</p>
+				<div className="skill-images">
+					<img src="/src/assets/js.png" className="img-skill"></img>
+					<img
+						src="/src/assets/python.png"
+						className="img-skill"
+					></img>
+					<img src="/src/assets/post.png" className="img-skill"></img>
+				</div>
 			</section>
 			<section className="projects">
 				<h3>projects</h3>
