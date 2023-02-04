@@ -11,7 +11,7 @@
 /*
   2. Remove default margin
 */
-* {
+*:not(code) {
 	margin: 0;
 	font-family: "roboto";
 }
@@ -21,6 +21,7 @@
 html,
 body {
 	background-image: linear-gradient(var(--dark-black), var(--lighter-black));
+    min-width: 100vw;
     /* height: 100vh; */
 }
 /*
