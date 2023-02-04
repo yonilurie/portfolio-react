@@ -22,24 +22,23 @@ function App() {
 		<div className="App" aria-hidden={showContact}>
 			{showContact && <Contact toggleContact={toggleContact} />}
 			<nav>
-				{/* <div> */}
 				<a
 					href="/src/assets/YonatanLurieResume.pdf"
 					target="_blank"
 					referrerPolicy="no-referrer"
 					className="nav-item"
 				>
-					resume
+					Resume
 				</a>
-				{/* </div> */}
+
 				<button onClick={toggleContact} className="nav-item">
-					contact me
+					Contact Me
 				</button>
 			</nav>
 			<section className="who-am-i">
 				<div>
-					<h1>yonatan lurie</h1>
-					<h2>full stack software engineer</h2>
+					<h1>Yonatan Lurie</h1>
+					<h2>Full Stack Software Engineer</h2>
 				</div>
 				<p>
 					After graduating from the University of Washington with a
@@ -51,7 +50,7 @@ function App() {
 				</p>
 			</section>
 			<section className="skills">
-				<h3>my skills</h3>
+				<h3>Skills</h3>
 				<div className="skill-images">
 					<img src="/src/assets/js.png" className="img-skill"></img>
 					<img src="/src/assets/css.png" className="img-skill"></img>
@@ -69,10 +68,7 @@ function App() {
 						src="/src/assets/sequelize.png"
 						className="img-skill"
 					></img>
-					<img
-						src="/src/assets/sqla.png"
-						className="img-skill"
-					></img>
+					<img src="/src/assets/sqla.png" className="img-skill"></img>
 					<img
 						src="/src/assets/react.png"
 						className="img-skill"
@@ -81,10 +77,7 @@ function App() {
 						src="/src/assets/redux.png"
 						className="img-skill"
 					></img>
-					<img
-						src="/src/assets/node.png"
-						className="img-skill"
-					></img>
+					<img src="/src/assets/node.png" className="img-skill"></img>
 					<img
 						src="/src/assets/express.png"
 						className="img-skill"
