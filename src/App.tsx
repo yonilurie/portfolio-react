@@ -112,7 +112,7 @@ function App() {
 								Live Site
 							</a>
 							<a
-								href="https://github.com/yonilurie/instagram-clone"
+								href="https://github.com/Hansen-G/TheGramme"
 								target="_blank"
 								referrerPolicy="no-referrer"
 							>
