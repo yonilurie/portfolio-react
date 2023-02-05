@@ -37,7 +37,7 @@ function App() {
 					<i className="fa-brands fa-linkedin-in"></i>
 				</a>
 				<a
-					href="/src/assets/YonatanLurieResume.pdf"
+					href="YonatanLurieResume.pdf"
 					target="_blank"
 					referrerPolicy="no-referrer"
 					className="nav-item"
@@ -66,34 +66,34 @@ function App() {
 			<section className="skills">
 				<h3>Skills</h3>
 				<div className="skill-images">
-					<img src="/src/assets/js.png" className="img-skill"></img>
-					<img src="/src/assets/css.png" className="img-skill"></img>
-					<img src="/src/assets/html.png" className="img-skill"></img>
+					<img src="js.png" className="img-skill"></img>
+					<img src="css.png" className="img-skill"></img>
+					<img src="html.png" className="img-skill"></img>
 					<img
-						src="/src/assets/python.png"
+						src="python.png"
 						className="img-skill"
 					></img>
-					<img src="/src/assets/post.png" className="img-skill"></img>
+					<img src="post.png" className="img-skill"></img>
 					<img
-						src="/src/assets/flask.png"
-						className="img-skill"
-					></img>
-					<img
-						src="/src/assets/sequelize.png"
-						className="img-skill"
-					></img>
-					<img src="/src/assets/sqla.png" className="img-skill"></img>
-					<img
-						src="/src/assets/react.png"
+						src="flask.png"
 						className="img-skill"
 					></img>
 					<img
-						src="/src/assets/redux.png"
+						src="sequelize.png"
 						className="img-skill"
 					></img>
-					<img src="/src/assets/node.png" className="img-skill"></img>
+					<img src="sqla.png" className="img-skill"></img>
 					<img
-						src="/src/assets/express.png"
+						src="react.png"
+						className="img-skill"
+					></img>
+					<img
+						src="redux.png"
+						className="img-skill"
+					></img>
+					<img src="node.png" className="img-skill"></img>
+					<img
+						src="express.png"
 						className="img-skill"
 					></img>
 				</div>
@@ -137,7 +137,7 @@ function App() {
 						referrerPolicy="no-referrer"
 						className="project-img"
 					>
-						<img src="/src/assets/thegramme-img.png"></img>
+						<img src="thegramme-img.png"></img>
 					</a>
 				</div>
 				<div className="single-project">
@@ -179,7 +179,7 @@ function App() {
 						referrerPolicy="no-referrer"
 						className="project-img"
 					>
-						<img src="/src/assets/teddir-img.png"></img>
+						<img src="teddir-img.png"></img>
 					</a>
 				</div>
 				<div className="single-project">
@@ -224,7 +224,7 @@ function App() {
 						referrerPolicy="no-referrer"
 						className="project-img"
 					>
-						<img src="/src/assets/abnb-img.png"></img>
+						<img src="abnb-img.png"></img>
 					</a>
 				</div>
 				<div className="single-project">
@@ -268,7 +268,7 @@ function App() {
 						referrerPolicy="no-referrer"
 						className="project-img"
 					>
-						<img src="/src/assets/wordle-img.png"></img>
+						<img src="wordle-img.png"></img>
 					</a>
 				</div>
 				<div className="single-project">
@@ -307,7 +307,7 @@ function App() {
 						referrerPolicy="no-referrer"
 						className="project-img"
 					>
-						<img src="/src/assets/boggle-img.png"></img>
+						<img src="boggle-img.png"></img>
 					</a>
 				</div>
 				<div className="single-project">
@@ -349,7 +349,7 @@ function App() {
 						referrerPolicy="no-referrer"
 						className="project-img"
 					>
-						<img src="/src/assets/etch-img.png"></img>
+						<img src="etch-img.png"></img>
 					</a>
 				</div>
 			</section>
@@ -360,11 +360,18 @@ function App() {
 
 export default App;
 
-function Contact({ toggleContact }) {
+interface ContactProps {
+	toggleContact: Function;
+}
+
+function Contact({ toggleContact }: ContactProps) {
 	return (
 		<div className="contact-container" id="contact-container">
 			<div className="contact" id="contact">
-				<button className="exit-contact" onClick={toggleContact}>
+				<button
+					className="exit-contact"
+					onClick={() => toggleContact()}
+				>
 					X
 				</button>
 				<h2>Contact me</h2>
