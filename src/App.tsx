@@ -55,12 +55,27 @@ function App() {
 					<h2>Full Stack Software Engineer</h2>
 				</div>
 				<p>
-					After graduating from the University of Washington with a
-					B.A. majoring in Psychology, I changed career paths and
-					began studying software development. I attended the App
-					Academy boot camp and gained 1000+ hours of experience
-					learning about computer science and creating multiple
-					full-stack projects.
+					Hi there! I'm Yonatan, a recent graduate with a B.A. in
+					Psychology from the University of Washington. I discovered
+					my passion for software engineering after changing careers
+					and completing a boot camp focused on full-stack web
+					development. I have 1000+ hours of experience and have
+					created multiple full-stack projects using React,
+					TypeScript, and Python or JavaScript. I also have experience
+					with Sequelize and SQLAlchemy for database management.
+				</p>
+				<p>
+					I'm excited to start my career in technology and am looking
+					for an entry-level position to join the workforce. I'm a
+					quick learner and enjoy learning new technologies and
+					developing software. I have experience working in teams, as
+					an employee, and as a leader.
+				</p>
+				<p>
+					When I'm not coding, I enjoy learning about history,
+					reading, playing word games, watching stand-up comedy, and
+					listening to music. Feel free to reach out to me at
+					yonilurie@protonmail.com, I'm always up for a conversation!
 				</p>
 			</section>
 			<section className="skills">
@@ -69,33 +84,15 @@ function App() {
 					<img src="js.png" className="img-skill"></img>
 					<img src="css.png" className="img-skill"></img>
 					<img src="html.png" className="img-skill"></img>
-					<img
-						src="python.png"
-						className="img-skill"
-					></img>
+					<img src="python.png" className="img-skill"></img>
 					<img src="post.png" className="img-skill"></img>
-					<img
-						src="flask.png"
-						className="img-skill"
-					></img>
-					<img
-						src="sequelize.png"
-						className="img-skill"
-					></img>
+					<img src="flask.png" className="img-skill"></img>
+					<img src="sequelize.png" className="img-skill"></img>
 					<img src="sqla.png" className="img-skill"></img>
-					<img
-						src="react.png"
-						className="img-skill"
-					></img>
-					<img
-						src="redux.png"
-						className="img-skill"
-					></img>
+					<img src="react.png" className="img-skill"></img>
+					<img src="redux.png" className="img-skill"></img>
 					<img src="node.png" className="img-skill"></img>
-					<img
-						src="express.png"
-						className="img-skill"
-					></img>
+					<img src="express.png" className="img-skill"></img>
 				</div>
 			</section>
 			<section className="projects">
