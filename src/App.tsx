@@ -69,7 +69,7 @@ function App() {
 					for an entry-level position to join the workforce. I'm a
 					quick learner and enjoy learning new technologies and
 					developing software. I have experience working in teams, as
-					an employee, and as a leader.
+					an employee, and in leadership positions.
 				</p>
 				<p>
 					When I'm not coding, I enjoy learning about history,
