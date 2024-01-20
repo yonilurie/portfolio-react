@@ -71,50 +71,6 @@ function App() {
 					yonatandlurie@outlook.com.
 				</p>
 			</section>
-			<section className="skills">
-				<h3>Skills</h3>
-				<div className="skills-breakdown-container">
-					<div className="column">
-						<div>C#</div>
-						<div>JavaScript</div>
-						<div>TypeScript</div>
-						<div>Python</div>
-						<div>CSS</div>
-						<div>HTML</div>
-					</div>
-					<div className="column">
-						<div>VS/VS Code</div>
-						<div>ASP.NET</div>
-						<div>React/Redux</div>
-						<div>Express.js</div>
-						<div>jQuery</div>
-						<div>Node.js</div>
-					</div>
-					<div className="column">
-						<div>SQLITE</div>
-						<div>Postgres</div>
-						<div>React/Redux</div>
-						<div>Microsoft SQL Server</div>
-						<div>Flask</div>
-						<div>NPM</div>
-					</div>
-				</div>
-
-				{/* <div className="skill-images">
-					<img src="js.png" className="img-skill"></img>
-					<img src="css.png" className="img-skill"></img>
-					<img src="html.png" className="img-skill"></img>
-					<img src="python.png" className="img-skill"></img>
-					<img src="post.png" className="img-skill"></img>
-					<img src="flask.png" className="img-skill"></img>
-					<img src="sequelize.png" className="img-skill"></img>
-					<img src="sqla.png" className="img-skill"></img>
-					<img src="react.png" className="img-skill"></img>
-					<img src="redux.png" className="img-skill"></img>
-					<img src="node.png" className="img-skill"></img>
-					<img src="express.png" className="img-skill"></img>
-				</div> */}
-			</section>
 			<section className="projects">
 				<h3>Projects</h3>
 				<div className="single-project">
@@ -369,6 +325,50 @@ function App() {
 						<img src="etch-img.png"></img>
 					</a>
 				</div>
+			</section>
+						<section className="skills">
+				<h3>Skills</h3>
+				<div className="skills-breakdown-container">
+					<div className="column">
+						<div>C#</div>
+						<div>JavaScript</div>
+						<div>TypeScript</div>
+						<div>Python</div>
+						<div>CSS</div>
+						<div>HTML</div>
+					</div>
+					<div className="column">
+						<div>VS/VS Code</div>
+						<div>ASP.NET</div>
+						<div>React/Redux</div>
+						<div>Express.js</div>
+						<div>jQuery</div>
+						<div>Node.js</div>
+					</div>
+					<div className="column">
+						<div>SQLITE</div>
+						<div>Postgres</div>
+						<div>React/Redux</div>
+						<div>Microsoft SQL Server</div>
+						<div>Flask</div>
+						<div>NPM</div>
+					</div>
+				</div>
+
+				{/* <div className="skill-images">
+					<img src="js.png" className="img-skill"></img>
+					<img src="css.png" className="img-skill"></img>
+					<img src="html.png" className="img-skill"></img>
+					<img src="python.png" className="img-skill"></img>
+					<img src="post.png" className="img-skill"></img>
+					<img src="flask.png" className="img-skill"></img>
+					<img src="sequelize.png" className="img-skill"></img>
+					<img src="sqla.png" className="img-skill"></img>
+					<img src="react.png" className="img-skill"></img>
+					<img src="redux.png" className="img-skill"></img>
+					<img src="node.png" className="img-skill"></img>
+					<img src="express.png" className="img-skill"></img>
+				</div> */}
 			</section>
 			<footer></footer>
 		</div>
