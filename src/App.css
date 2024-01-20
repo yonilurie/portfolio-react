@@ -186,6 +186,12 @@ h3 {
 	color: white;
 }
 
+
+.skills-breakdown-container {
+	display: flex;
+	justify-content: space-around;
+}
+
 @keyframes hover-over {
 	0% {
 		transform: scale(1);

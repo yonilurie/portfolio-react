@@ -55,31 +55,52 @@ function App() {
 					<h2>Full Stack Software Developer</h2>
 				</div>
 				<p>
-					Hi there! I'm a full stack software developer I discovered
-					my passion for software engineering after changing careers
+					I'm a full stack software developer with a focus on web development. I discovered
+					my passion for software engineering after changing my career path
 					and completing a boot camp focused on full-stack web
-					development. I have 1000+ hours of experience and have
-					created multiple full-stack projects using React,
-					TypeScript, and Python or JavaScript. I also have experience
-					with Sequelize and SQLAlchemy for database management.
+					development during which I created multiple full-stack projects using React,
+					TypeScript, Python, JavaScript, and SQL.
 				</p>
 				<p>
-					I'm excited to start my career in technology and am looking
-					for an entry-level position to join the workforce. I'm a
-					quick learner and enjoy learning new technologies and
-					developing software. I have experience working in teams, as
-					an employee, and in leadership positions.
+					I'm a quick learner and enjoy learning new languages and technologies.
+					Most recently I have been using ASP.NET to develop applications for the University of Washington.
 				</p>
 				<p>
-					When I'm not coding, I enjoy learning about history,
-					reading, playing word games, watching stand-up comedy, and
-					listening to music. Feel free to reach out to me at
-					yonilurie@protonmail.com, I'm always up for a conversation!
+					When I'm not coding, I enjoy researching and learning about history,
+					politics, current affairs, and geopolitics. Feel free to reach out to me at
+					yonatandlurie@outlook.com.
 				</p>
 			</section>
 			<section className="skills">
 				<h3>Skills</h3>
-				<div className="skill-images">
+				<div className="skills-breakdown-container">
+					<div className="column">
+						<div>C#</div>
+						<div>JavaScript</div>
+						<div>TypeScript</div>
+						<div>Python</div>
+						<div>CSS</div>
+						<div>HTML</div>
+					</div>
+					<div className="column">
+						<div>Visual Studio/Visual Studio Code</div>
+						<div>ASP.NET</div>
+						<div>React/Redux</div>
+						<div>Express.js</div>
+						<div>jQuery</div>
+						<div>Node.js</div>
+					</div>
+					<div className="column">
+						<div>SQLITE</div>
+						<div>Postgres</div>
+						<div>React/Redux</div>
+						<div>Microsoft SQL Server</div>
+						<div>Flask</div>
+						<div>NPM</div>
+					</div>
+				</div>
+
+				{/* <div className="skill-images">
 					<img src="js.png" className="img-skill"></img>
 					<img src="css.png" className="img-skill"></img>
 					<img src="html.png" className="img-skill"></img>
@@ -92,7 +113,7 @@ function App() {
 					<img src="redux.png" className="img-skill"></img>
 					<img src="node.png" className="img-skill"></img>
 					<img src="express.png" className="img-skill"></img>
-				</div>
+				</div> */}
 			</section>
 			<section className="projects">
 				<h3>Projects</h3>
