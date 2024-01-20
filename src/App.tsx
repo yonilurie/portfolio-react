@@ -83,7 +83,7 @@ function App() {
 						<div>HTML</div>
 					</div>
 					<div className="column">
-						<div>Visual Studio/Visual Studio Code</div>
+						<div>VS/VS Code</div>
 						<div>ASP.NET</div>
 						<div>React/Redux</div>
 						<div>Express.js</div>
