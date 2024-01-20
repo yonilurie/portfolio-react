@@ -52,11 +52,10 @@ function App() {
 			<section className="who-am-i">
 				<div>
 					<h1>Yonatan Lurie</h1>
-					<h2>Full Stack Software Engineer</h2>
+					<h2>Full Stack Software Developer</h2>
 				</div>
 				<p>
-					Hi there! I'm Yonatan, a recent graduate with a B.A. in
-					Psychology from the University of Washington. I discovered
+					Hi there! I'm a full stack software developer I discovered
 					my passion for software engineering after changing careers
 					and completing a boot camp focused on full-stack web
 					development. I have 1000+ hours of experience and have
