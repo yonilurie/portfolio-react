@@ -67,7 +67,7 @@ function App() {
 				</p>
 				<p>
 					When I'm not coding, I enjoy researching and learning about history,
-					politics, current affairs, and geopolitics. Feel free to reach out to me at
+				 	current affairs, and geopolitics. Feel free to reach out to me at
 					yonatandlurie@outlook.com.
 				</p>
 			</section>
