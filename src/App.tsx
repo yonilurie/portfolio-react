@@ -68,7 +68,7 @@ function App() {
 				</p>
 				<p>
 					Outside of coding, I am deeply interested in history, different cultures, current affairs, and geopolitics, continually expanding my knowledge in these areas.
-					If you wish to connect or discuss potential opportunities, please feel free to reach out to me at yonatandlurie@outlook.com."
+					If you wish to connect or discuss potential opportunities, please feel free to reach out to me at yonatandlurie@outlook.com.
 				</p>
 			</section>
 			<section className="projects">
