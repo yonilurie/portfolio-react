@@ -37,7 +37,7 @@ function App() {
 					<i className="fa-brands fa-linkedin-in"></i>
 				</a>
 				<a
-					href="YonatanLurieResume.pdf"
+					href="Yonatan_Lurie_Resume.pdf"
 					target="_blank"
 					referrerPolicy="no-referrer"
 					className="nav-item"
@@ -55,20 +55,20 @@ function App() {
 					<h2>Full Stack Software Developer</h2>
 				</div>
 				<p>
-					I'm a full stack software developer with a focus on web development. I discovered
-					my passion for software engineering after changing my career path
-					and completing a boot camp focused on full-stack web
-					development during which I created multiple full-stack projects using React,
-					TypeScript, Python, JavaScript, and SQL.
+					I am a full-stack software developer with a strong focus on web development, and I have a keen passion for software engineering.
+					My journey into this field began after a career shift from psychology, leading me to complete a boot camp in full-stack web development.
+					This intensive program equipped me with skills in React, TypeScript, Python, JavaScript, and SQL, enabling me to undertake multiple full-stack projects.
 				</p>
 				<p>
-					I'm a quick learner and enjoy learning new languages and technologies.
-					Most recently I have been using ASP.NET to develop applications for the University of Washington.
+					My ability to rapidly acquire new skills and knowledge has been a defining feature of my career.
+					After the boot camp, I transitioned smoothly into a professional role where I was challenged to learn ASP.NET Core on the job.
+					Despite having no prior experience with ASP.NET Core, I adapted swiftly and successfully applied this new expertise, along with jQuery, in developing applications.
+					This adaptability was further demonstrated in my recent work for the University of Washington, where I utilized .NET Core in application development,
+					showcasing my proficiency in quickly mastering and applying new technologies.
 				</p>
 				<p>
-					When I'm not coding, I enjoy researching and learning about history,
-				 	current affairs, and geopolitics. Feel free to reach out to me at
-					yonatandlurie@outlook.com.
+					Outside of coding, I am deeply interested in history, different cultures, current affairs, and geopolitics, continually expanding my knowledge in these areas.
+					If you wish to connect or discuss potential opportunities, please feel free to reach out to me at yonatandlurie@outlook.com."
 				</p>
 			</section>
 			<section className="projects">
