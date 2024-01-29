@@ -61,9 +61,8 @@ function App() {
 				</p>
 				<p>
 					My ability to rapidly acquire new skills and knowledge has been a defining feature of my career.
-					After the boot camp, I transitioned smoothly into a professional role where I was challenged to learn ASP.NET Core on the job.
-					Despite having no prior experience with ASP.NET Core, I adapted swiftly and successfully applied this new expertise, along with jQuery, in developing applications.
-					This adaptability was further demonstrated in my recent work for the University of Washington, where I utilized .NET Core in application development,
+					After the boot camp, I transitioned smoothly into a professional role where I was challenged to learn .NET Core on the job.
+					Despite having no prior experience with .NET Core, I adapted swiftly and successfully applied this new expertise in developing applications,
 					showcasing my proficiency in quickly mastering and applying new technologies.
 				</p>
 				<p>
