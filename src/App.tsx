@@ -57,7 +57,7 @@ function App() {
 				<p>
 					I'm a Full Stack software developer whose journey into the tech world began after earning a bachelor's degree in psychology. 
 					My fascination with technology led me to an intensive coding bootcamp, where I immersed myself in full stack web development, 
-					mastering a range of modern technologies. This transformative experience paved the way for my role at the University of Washington, 
+					learning a range of modern technologies. This transformative experience paved the way for my role at the University of Washington, 
 					where I currently apply my skills as a Full Stack Developer, tackling diverse challenges and contributing to meaningful projects. 
 				</p>
 			</section>
