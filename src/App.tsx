@@ -3,7 +3,7 @@ import { useState } from "react";
 function App() {
 	const [showContact, setShowContact] = useState(false);
 
-	const toggleContact = () => {
+	function toggleContact() {
 		if (showContact) {
 			let contact = document.getElementById("contact");
 			contact?.classList.add("fade-out");
@@ -37,7 +37,7 @@ function App() {
 					<i className="fa-brands fa-linkedin-in"></i>
 				</a>
 				<a
-					href="Yonatan_Lurie_Resume.pdf"
+					href="YonatanLurieResume.pdf"
 					target="_blank"
 					referrerPolicy="no-referrer"
 					className="nav-item"
@@ -55,19 +55,10 @@ function App() {
 					<h2>Full Stack Software Developer</h2>
 				</div>
 				<p>
-					I am a full-stack software developer with a strong focus on web development, and I have a keen passion for software engineering.
-					My journey into this field began after a career shift from psychology, leading me to complete a boot camp in full-stack web development.
-					This intensive program equipped me with skills in React, TypeScript, Python, JavaScript, and SQL, enabling me to undertake multiple full-stack projects.
-				</p>
-				<p>
-					My ability to rapidly acquire new skills and knowledge has been a defining feature of my career.
-					After the boot camp, I transitioned smoothly into a professional role where I was challenged to learn .NET Core on the job.
-					Despite having no prior experience with .NET Core, I adapted swiftly and successfully applied this new expertise in developing applications,
-					showcasing my proficiency in quickly mastering and applying new technologies.
-				</p>
-				<p>
-					Outside of coding, I am deeply interested in history, different cultures, current affairs, and geopolitics, continually expanding my knowledge in these areas.
-					If you wish to connect or discuss potential opportunities, please feel free to reach out to me at yonatandlurie@outlook.com.
+					I'm a Full Stack software developer whose journey into the tech world began after earning a bachelor's degree in psychology. 
+					My fascination with technology led me to an intensive coding bootcamp, where I immersed myself in full stack web development, 
+					mastering a range of modern technologies. This transformative experience paved the way for my role at the University of Washington, 
+					where I currently apply my skills as a Full Stack Developer, tackling diverse challenges and contributing to meaningful projects. 
 				</p>
 			</section>
 			<section className="projects">
@@ -227,11 +218,9 @@ function App() {
 							attempts to guess it correctly.
 						</p>
 						<p>
-							Each guess has the opportunity to reveal
-							information. Each letter in the users guess that is
-							in the word will be colored in gold. Each letter
-							that is in the same place as the word will be green.
-							All other letters will be grey.
+							Features include a color-changing keyboard to reflect previous user guesses, 
+							a persistent dark mode toggle for improved user experience, 
+							and a feature for players to easily share their game results. 
 						</p>
 					</div>
 					<a
@@ -265,11 +254,10 @@ function App() {
 						<p>
 							<code>(TypeScript, React, CSS)</code>
 						</p>
-						<p>The game of Boggle.</p>
+						<p>The game of Boggle. Players have 3 minutes to find as many words as possible on the board</p>
 						<p>
-							A 4X4 board of letters is generated, the user has 3
-							minutes to find as many words comprised of adjacent
-							cells as possible.
+							Using TypeScript I implemented an algorithm to uncover every word possibility on the Boggle board, 
+							and integrated the Free Dictionary API for quick access to word definitions. 
 						</p>
 					</div>
 
@@ -329,12 +317,12 @@ function App() {
 				<h3>Skills</h3>
 				<div className="skills-breakdown-container">
 					<div className="column">
-						<div>C#</div>
 						<div>JavaScript</div>
+						<div>C#</div>
 						<div>TypeScript</div>
-						<div>Python</div>
 						<div>CSS</div>
 						<div>HTML</div>
+						<div>Python</div>
 					</div>
 					<div className="column">
 						<div>VS/VS Code</div>
