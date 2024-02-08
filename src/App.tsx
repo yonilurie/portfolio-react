@@ -313,34 +313,20 @@ function App() {
 					</a>
 				</div>
 			</section>
-						<section className="skills">
+			<section className="skills">
 				<h3>Skills</h3>
-				<div className="skills-breakdown-container">
 					<div className="column">
-						<div>JavaScript</div>
-						<div>C#</div>
-						<div>TypeScript</div>
-						<div>CSS</div>
-						<div>HTML</div>
-						<div>Python</div>
+						<div><strong>Languages:</strong> JavaScript, C#, TypeScript, CSS/HTML, Python</div>
 					</div>
 					<div className="column">
-						<div>Visual Studio/Visual Studio Code</div>
-						<div>ASP.NET</div>
-						<div>React/Redux</div>
-						<div>Express.js</div>
-						<div>jQuery</div>
-						<div>Node.js</div>
+						<div><strong>Libraries: </strong> React/Redux, jQuery, Dapper, SQLAlchemy, Sequelize</div>
 					</div>
 					<div className="column">
-						<div>SQLITE</div>
-						<div>Postgres</div>
-						<div>React/Redux</div>
-						<div>Microsoft SQL Server</div>
-						<div>Flask</div>
-						<div>Postman</div>
+						<div><strong>Frameworks:</strong> ASP.NET Core, Kendo UI, Express, Flask</div>
 					</div>
-				</div>
+					<div className="column">
+						<div><strong>Tools:</strong> Visual Studio/Visual Studio Code, GitHub, Git, Jira, SSMS, Postman</div>
+					</div>
 			</section>
 			<footer></footer>
 		</div>
