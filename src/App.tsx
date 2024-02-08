@@ -52,13 +52,13 @@ function App() {
 			<section className="who-am-i">
 				<div>
 					<h1>Yonatan Lurie</h1>
-					<h2>Full Stack Software Developer</h2>
+					<h2>Full-Stack Software Developer</h2>
 				</div>
 				<p>
-					I'm a Full Stack software developer whose journey into the tech world began after earning a bachelor's degree in psychology. 
-					My fascination with technology led me to an intensive coding bootcamp, where I immersed myself in full stack web development, 
+					I'm a full-stack software developer whose journey into the tech world began after earning a bachelor's degree in psychology. 
+					My fascination with technology led me to an intensive coding bootcamp, where I immersed myself in full-stack web development, 
 					learning a range of modern technologies. This transformative experience paved the way for my role at the University of Washington, 
-					where I currently apply my skills as a Full Stack Developer, tackling diverse challenges and contributing to meaningful projects. 
+					where I currently apply my skills as a full-stack developer, tackling diverse challenges and contributing to meaningful projects. 
 				</p>
 			</section>
 			<section className="projects">
@@ -325,7 +325,7 @@ function App() {
 						<div>Python</div>
 					</div>
 					<div className="column">
-						<div>VS/VS Code</div>
+						<div>Visual Studio/Visual Studio Code</div>
 						<div>ASP.NET</div>
 						<div>React/Redux</div>
 						<div>Express.js</div>
@@ -338,24 +338,9 @@ function App() {
 						<div>React/Redux</div>
 						<div>Microsoft SQL Server</div>
 						<div>Flask</div>
-						<div>NPM</div>
+						<div>Postman</div>
 					</div>
 				</div>
-
-				{/* <div className="skill-images">
-					<img src="js.png" className="img-skill"></img>
-					<img src="css.png" className="img-skill"></img>
-					<img src="html.png" className="img-skill"></img>
-					<img src="python.png" className="img-skill"></img>
-					<img src="post.png" className="img-skill"></img>
-					<img src="flask.png" className="img-skill"></img>
-					<img src="sequelize.png" className="img-skill"></img>
-					<img src="sqla.png" className="img-skill"></img>
-					<img src="react.png" className="img-skill"></img>
-					<img src="redux.png" className="img-skill"></img>
-					<img src="node.png" className="img-skill"></img>
-					<img src="express.png" className="img-skill"></img>
-				</div> */}
 			</section>
 			<footer></footer>
 		</div>
