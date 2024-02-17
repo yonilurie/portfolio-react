@@ -9,19 +9,49 @@ function App() {
 			contact?.classList.add("fade-out");
 			let contactContainer = document.getElementById("contact-container");
 			contactContainer?.classList.add("fade-out");
+			// Disable scroll
+			let html = document.querySelector("html");
+			html?.classList.remove("disable-scroll")
+			let body = document.querySelector("body");
+			body?.classList.remove("disable-scroll")
 			const timeout = setTimeout(() => {
 				setShowContact((show) => !show);
 			}, 500);
 			return () => clearTimeout(timeout);
 		} else {
 			setShowContact((show) => !show);
+			// Reenable scroll
+			let html = document.querySelector("html");
+			html?.classList.add("disable-scroll")
+			let body = document.querySelector("body");
+			body?.classList.add("disable-scroll")
 		}
 	};
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() { toggleNavSticky(); };
+
+// Add the sticky class to the header and adjust width when you reach its scroll position. 
+// Remove "sticky" when you leave the scroll position and reset width to 100%
+function toggleNavSticky(): void {
+	// Get the header
+	const header: HTMLElement | null = document.querySelector("nav");
+	// Get the offset position of the navbar
+	const sticky: number = header?.offsetTop ?? 0;
+	if (window.pageYOffset > sticky) {
+    header?.classList.add("sticky-narrow");
+  } else {
+    header?.classList.remove("sticky-narrow");
+  }
+}
+	
+	
 
 	return (
 		<div className="App" aria-hidden={showContact}>
 			{showContact && <Contact toggleContact={toggleContact} />}
-			<nav>
+			<div className='sticky'>
+			<nav className='nav'>
 				<a
 					href="https://github.com/yonilurie"
 					target="_blank"
@@ -48,17 +78,18 @@ function App() {
 				<button onClick={toggleContact} className="nav-item">
 					Contact Me
 				</button>
-			</nav>
+				</nav>
+			</div>
+		<div className='content'>
 			<section className="who-am-i">
 				<div>
 					<h1>Yonatan Lurie</h1>
 					<h2>Full-Stack Software Developer</h2>
 				</div>
 				<p>
-					I'm a full-stack software developer whose journey into the tech world began after earning a bachelor's degree in psychology. 
-					My fascination with technology led me to an intensive coding bootcamp, where I immersed myself in full-stack web development, 
-					learning a range of modern technologies. This transformative experience paved the way for my role at the University of Washington, 
-					where I currently apply my skills as a full-stack developer, tackling diverse challenges and contributing to meaningful projects. 
+					My journey into tech began after earning a bachelor's degree in psychology. 
+					I transitioned into development by attending an intensive full-stack coding bootcamp where I learned a range of modern technologies.  
+					I currently apply my skills as a full-stack web developer at the Univeristy of Washington. 
 				</p>
 			</section>
 			<section className="projects">
@@ -327,8 +358,8 @@ function App() {
 					<div className="column">
 						<div><strong>Tools:</strong> Visual Studio/Visual Studio Code, GitHub, Git, Jira, SSMS, Postman</div>
 					</div>
-			</section>
-			<footer></footer>
+				</section>
+			</div>
 		</div>
 	);
 }
