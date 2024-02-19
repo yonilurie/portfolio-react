@@ -51,7 +51,7 @@ function toggleNavSticky(): void {
 		<div className="App" aria-hidden={showContact}>
 			{showContact && <Contact toggleContact={toggleContact} />}
 			<div className='sticky'>
-			<nav className='nav'>
+				<nav className='nav'>
 				<a
 					href="https://github.com/yonilurie"
 					target="_blank"
@@ -344,20 +344,22 @@ function toggleNavSticky(): void {
 					</a>
 				</div>
 			</section>
-			<section className="skills">
-				<h3>Skills</h3>
-					<div className="column">
+				<section className="skills">
+					<h3>Skills</h3>
+					<div className='skills-flex'>
+					<div className="row">
 						<div><strong>Languages:</strong> JavaScript, C#, TypeScript, CSS/HTML, Python</div>
 					</div>
-					<div className="column">
+					<div className="row">
 						<div><strong>Libraries: </strong> React/Redux, jQuery, Dapper, SQLAlchemy, Sequelize</div>
 					</div>
-					<div className="column">
+					<div className="row">
 						<div><strong>Frameworks:</strong> ASP.NET Core, Kendo UI, Express, Flask</div>
 					</div>
-					<div className="column">
+					<div className="row">
 						<div><strong>Tools:</strong> Visual Studio/Visual Studio Code, GitHub, Git, Jira, SSMS, Postman</div>
-					</div>
+						</div>
+				</div>
 				</section>
 			</div>
 		</div>
