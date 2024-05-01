@@ -86,11 +86,8 @@ function toggleNavSticky(): void {
 					<h1>Yonatan Lurie</h1>
 					<h2>Full-Stack Software Developer</h2>
 				</div>
-				<p>
-					My journey into tech began after earning a bachelor's degree in psychology. 
-					I transitioned into development by attending an intensive full-stack coding bootcamp where I learned a range of modern technologies.  
-					I currently apply my skills as a full-stack web developer at the Univeristy of Washington. 
-				</p>
+				<p>I am Yonatan Lurie, a Full-Stack Software Developer with a strong background in web development, particularly in managing and enhancing large-scale applications. I hold a BA in Psychology from the University of Washington, where I also contributed significantly to a key finance department project. My technical skills span across JavaScript, TypeScript, SQL, C#, and Python, with proficiency in frameworks like ASP.NET Core, Express, and Flask.</p>
+    			<p>In my recent role at the University of Washington Finance, I played a pivotal role in the development and maintenance of a web application managing $60M in scholarship funds. I led efforts that significantly improved our application's test coverage and coding standards, enhancing overall code reliability. I thrive in Agile development environments and am keen on utilizing my skills in a dynamic new setting.</p>
 			</section>
 			<section className="projects">
 				<h3>Projects</h3>
