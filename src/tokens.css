@@ -1,0 +1,97 @@
+/* Design tokens — shared shadow, gradient, and motion values.
+   Import this file before component styles so tokens resolve correctly. */
+
+:root {
+  /* ── Motion ─────────────────────────────────────────────── */
+  --duration: 0.4s;
+
+  /* ── Edge highlights (adapt per theme) ─────────────────── */
+  --highlight-strong: rgba(255, 255, 255, 0.9);
+  --highlight-subtle: rgba(255, 255, 255, 0.55);
+
+  /* ── Shadows ────────────────────────────────────────────── */
+
+  /* Large raised card (stat cards, timeline cards, skill groups) */
+  --shadow-card-raised:
+    10px 10px 26px var(--shadow-dark),
+    -10px -10px 26px var(--shadow-light),
+    inset 0 1px 0 var(--highlight-strong),
+    inset 1px 0 0 var(--highlight-subtle),
+    inset 0 -2px 0 var(--shadow-dark),
+    inset -2px 0 0 var(--shadow-dark);
+
+  /* Small button raised — 6 layers so the browser can interpolate to --shadow-btn-pressed */
+  --shadow-btn-raised:
+    6px 6px 14px var(--shadow-dark),
+    -6px -6px 14px var(--shadow-light),
+    inset 0 1px 0 var(--highlight-strong),
+    inset 1px 0 0 var(--highlight-subtle),
+    inset 0px 0px 0px transparent,
+    inset 0px 0px 0px transparent;
+
+  /* Small button pressed — mirrors layer count of --shadow-btn-raised for smooth transition */
+  --shadow-btn-pressed:
+    0px 0px 0px transparent,
+    0px 0px 0px transparent,
+    inset 0 0px 0px transparent,
+    inset 0px 0px 0px transparent,
+    inset 3px 3px 8px var(--shadow-dark),
+    inset -3px -3px 8px var(--shadow-light);
+
+  /* Green-surface button shadows — rgba so they work on any colored background */
+  --shadow-btn-raised-green:
+    6px 6px 14px rgba(0, 0, 0, 0.28),
+    -6px -6px 14px rgba(255, 255, 255, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 1px 0 0 rgba(255, 255, 255, 0.14),
+    inset 0px 0px 0px transparent,
+    inset 0px 0px 0px transparent;
+
+  --shadow-btn-pressed-green:
+    0px 0px 0px transparent,
+    0px 0px 0px transparent,
+    inset 0 0px 0px transparent,
+    inset 0px 0px 0px transparent,
+    inset 3px 3px 8px rgba(0, 0, 0, 0.45),
+    inset -3px -3px 8px rgba(255, 255, 255, 0.22);
+
+  /* Modal overlay background */
+  --overlay-bg: rgba(226, 232, 240, 0.7);
+
+  /* Pill-sized press inset */
+  --shadow-press-sm: inset 2px 2px 6px var(--shadow-dark), inset -2px -2px 6px var(--shadow-light);
+
+  /* ── Gradient fills ─────────────────────────────────────── */
+
+  /* Nav link hover fill */
+  --gradient-fill-strong: linear-gradient(135deg, rgba(22, 163, 74, 0.32) 0%, rgba(37, 99, 235, 0.22) 100%);
+
+  /* Card and pill hover fill */
+  --gradient-fill-subtle: linear-gradient(135deg, rgba(22, 163, 74, 0.18) 0%, rgba(37, 99, 235, 0.12) 100%);
+}
+
+/* ── Dark mode overrides ────────────────────────────────── */
+/* html[data-theme="dark"] has specificity (0,1,1) which beats :root (0,1,0)
+   regardless of where in the CSS this rule appears. */
+html[data-theme="dark"] {
+  --bg:           #1e2933;
+  --shadow-dark:  #16202c;
+  --shadow-light: #233040;
+  --text:         #e2e8f0;
+  --text-muted:   #94a3b8;
+
+  --highlight-strong: rgba(255, 255, 255, 0.02);
+  --highlight-subtle: rgba(255, 255, 255, 0.01);
+
+  --green: var(--blue);
+
+  --shadow-btn-raised-green:
+    6px 6px 14px rgba(0, 0, 0, 0.35),
+    -6px -6px 14px rgba(255, 255, 255, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 1px 0 0 rgba(255, 255, 255, 0.04),
+    inset 0px 0px 0px transparent,
+    inset 0px 0px 0px transparent;
+
+  --overlay-bg: rgba(30, 41, 51, 0.7);
+}
