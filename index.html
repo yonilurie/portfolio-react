@@ -2,22 +2,44 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Yonatan Lurie's website" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/src/assets/y.ico" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.cdnfonts.com/css/aller"
+		<title>Yonatan Lurie — Software Engineer</title>
+		<meta
+			name="description"
+			content="Software engineer in Seattle who works between clients and developers: hands-on in React, TypeScript and APIs, and clear enough to explain it. Integrations, developer experience, and AI tooling."
 		/>
-		<link
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet"
+		<link rel="canonical" href="https://yonatanlurie.com/" />
+		<link rel="icon" href="/src/assets/y.ico" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://yonatanlurie.com/" />
+		<meta property="og:title" content="Yonatan Lurie — Software Engineer" />
+		<meta
+			property="og:description"
+			content="Technical enough to build it. Clear enough to explain it. Software engineer focused on integrations, developer experience, and AI tooling."
 		/>
-    		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		/>
-		<title>Yonatan Lurie</title>
+		<meta name="twitter:card" content="summary" />
+
+		<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#0b1117" media="(prefers-color-scheme: dark)" />
+
+		<!-- Resolve the theme before first paint to avoid a light/dark flash -->
+		<script>
+			(function () {
+				var theme;
+				try {
+					theme = localStorage.getItem("theme");
+				} catch (e) {}
+				if (theme !== "light" && theme !== "dark") {
+					theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+				}
+				document.documentElement.dataset.theme = theme;
+				// Opt in to scroll-reveal before first paint so content never flashes in
+				if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+					document.documentElement.classList.add("reveal-ready");
+				}
+			})();
+		</script>
 	</head>
 	<body>
 		<div id="root"></div>

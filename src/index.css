@@ -1,41 +1,75 @@
-@import './tokens.css';
-
+/* ── Design tokens ──────────────────────────────────────── */
 :root {
-  --bg:           #e2e8f0;
-  --shadow-dark:  #d1d6de;
-  --shadow-light: #f0f4f8;
+  --bg:          #fafafa;
+  --surface:     #ffffff;
+  --border:      #e4e4e7;
+  --text:        #0f172a;
+  --text-muted:  #475569; /* 7.2:1 on --bg */
+  --accent:      #15803d; /* 5.0:1 on --surface */
+  --accent-hover:#166534;
+  --accent-soft: rgba(21, 128, 61, 0.08);
+  --on-accent:   #ffffff;
+  --overlay:     rgba(15, 23, 42, 0.45);
+  --dot:         rgba(15, 23, 42, 0.14);
+  --glow:        rgba(21, 128, 61, 0.14);
+  --shadow:      0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.04);
 
-  --neu-raised: 5px 5px 12px var(--shadow-dark), -5px -5px 12px var(--shadow-light);
-  --neu-inset:  inset 3px 3px 8px var(--shadow-dark), inset -3px -3px 8px var(--shadow-light);
+  /* Type scale */
+  --fs-xs:   0.8125rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.25rem;
+  --fs-xl:   1.75rem;
 
-  --green:        #16a34a;
-  --blue:         #2563eb;
-  --text:         #1e2a3a;
-  --text-muted:   #64748b;
+  --radius:    12px;
+  --radius-sm: 8px;
+  --duration:  0.2s;
+  --content-width: 1040px;
+
+  color-scheme: light;
 }
 
+:root[data-theme="dark"] {
+  --bg:          #0b1117;
+  --surface:     #111a23;
+  --border:      #1f2b37;
+  --text:        #e2e8f0;
+  --text-muted:  #94a3b8;
+  --accent:      #4ade80;
+  --accent-hover:#86efac;
+  --accent-soft: rgba(74, 222, 128, 0.08);
+  --on-accent:   #052e16;
+  --overlay:     rgba(0, 0, 0, 0.6);
+  --dot:         rgba(226, 232, 240, 0.10);
+  --glow:        rgba(74, 222, 128, 0.08);
+  --shadow:      none;
+
+  color-scheme: dark;
+}
+
+/* ── Reset ──────────────────────────────────────────────── */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-*:not(code) {
-  font-family: "Aller", sans-serif;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
-html,
 body {
-  background-color: var(--bg);
   min-height: 100vh;
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: var(--fs-base);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  color: var(--text);
+  transition: background-color var(--duration) ease, color var(--duration) ease;
 }
 
 img, picture, video, canvas, svg {
@@ -45,16 +79,71 @@ img, picture, video, canvas, svg {
 
 input, button, textarea, select {
   font: inherit;
+  color: inherit;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-#root, #__next {
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+#root {
   isolation: isolate;
 }
 
-.disable-scroll {
-  overflow: hidden;
+/* ── Scrollbar ──────────────────────────────────────────── */
+/* The transparent border insets the thumb, leaving a gap on each side */
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  background-clip: padding-box;
+  border: 4px solid transparent;
+  border-right-width: 5px;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
+}
+
+/* Firefox only: in Chromium, scrollbar-color would override the styles above */
+@supports (-moz-appearance: none) {
+  html {
+    scrollbar-color: color-mix(in srgb, var(--accent) 55%, transparent) var(--bg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
