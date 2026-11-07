@@ -8,6 +8,9 @@ const LINKEDIN_URL = "https://www.linkedin.com/in/yonilurie/";
 const RESUME_URL = "YonatanLurieResume.pdf";
 const FORMSPREE_URL = "https://formspree.io/f/xgeqapga";
 
+// Drafts show locally under `npm run dev` but never on the live site
+const PUBLISHED_ARTICLES = ARTICLES.filter((a) => import.meta.env.DEV || !a.draft);
+
 const FACTS = [
   { label: "Currently", value: "Technical Lead, Vendor Integrations at Invent.us" },
   { label: "Based in", value: "Seattle, WA" },
@@ -132,7 +135,7 @@ function useHash() {
 
 function App() {
   const hash = useHash();
-  const article = ARTICLES.find((a) => hash === `#/writing/${a.slug}`);
+  const article = PUBLISHED_ARTICLES.find((a) => hash === `#/writing/${a.slug}`);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const [scrolled, setScrolled] = useState(false);
   const [showBrand, setShowBrand] = useState(false);
@@ -216,7 +219,9 @@ function App() {
           <nav className="nav" aria-label="Primary">
             <a href="#how-i-work" className="nav-link nav-link--section">How I work</a>
             <a href="#work" className="nav-link nav-link--section">Work</a>
-            <a href="#writing" className="nav-link nav-link--section">Writing</a>
+            {PUBLISHED_ARTICLES.length > 0 && (
+              <a href="#writing" className="nav-link nav-link--section">Writing</a>
+            )}
             <a href="#about" className="nav-link nav-link--section">About</a>
             <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="nav-link">Resume</a>
             <span className="nav-divider" aria-hidden="true" />
@@ -328,12 +333,13 @@ function App() {
           </div>
         </section>
 
+        {PUBLISHED_ARTICLES.length > 0 && (
         <section id="writing" className="container section" aria-labelledby="writing-title">
           <SectionHeading id="writing-title" eyebrow="Writing">
             Notes on partner engineering and AI tooling.
           </SectionHeading>
           <div className="writing-list">
-            {ARTICLES.map((a) => (
+            {PUBLISHED_ARTICLES.map((a) => (
               <a className="card writing-card" href={`#/writing/${a.slug}`} key={a.slug} data-reveal>
                 <div className="writing-meta">
                   {a.draft && <span className="draft-badge">Draft</span>}
@@ -346,6 +352,7 @@ function App() {
             ))}
           </div>
         </section>
+        )}
 
         <section id="about" className="container section about" aria-labelledby="about-title">
           <div className="about-text" data-reveal>
