@@ -11,32 +11,32 @@ const FORMSPREE_URL = "https://formspree.io/f/xgeqapga";
 const FACTS = [
   { label: "Currently", value: "Technical Lead, Vendor Integrations at Invent.us" },
   { label: "Based in", value: "Seattle, WA" },
-  { label: "Focus", value: "Partner integrations, SDKs, AI developer tooling" },
+  { label: "Focus", value: "Integrations, developer experience, AI tooling" },
   { label: "Background", value: "Psychology (UW) → full-stack engineering" },
 ];
 
-const LIFECYCLE_HANDOFF = { title: "Introduction", detail: "A new vendor is brought onto the platform" };
+const LIFECYCLE_HANDOFF = { title: "The idea", detail: "Someone has something they want built" };
 
 const LIFECYCLE_OWNED = [
-  { title: "Demo & scoping", detail: "Platform walkthrough and build scoping" },
-  { title: "Provisioning", detail: "Credentials, seeded portal, and GitLab access" },
-  { title: "Build", detail: "API and OAuth integration support" },
-  { title: "Review", detail: "Merge-request review and final approval" },
-  { title: "Production", detail: "Release and demo-ready launch" },
+  { title: "Understand", detail: "Learn what they're actually trying to build" },
+  { title: "Scope", detail: "Turn the idea into a buildable plan" },
+  { title: "Unblock", detail: "Access, answers, and integration problems solved" },
+  { title: "Review", detail: "Hold the quality bar before anything ships" },
+  { title: "Launch", detail: "Get it to production and make sure it holds up" },
 ];
 
 const PRINCIPLES = [
   {
     title: "Make the right path the easy path",
-    body: "If partners keep repeating the same manual steps, that's a tooling problem. I build the automation so the correct setup is also the fastest one.",
+    body: "If people keep repeating the same manual steps, that's a tooling problem. I build the automation so the correct setup is also the fastest one.",
   },
   {
     title: "Explain the why",
     body: "Review feedback should teach, not just block. Findings are ranked must-fix, should-fix, and can-fix, each with where and why.",
   },
   {
-    title: "One technical point of contact",
-    body: "Partners shouldn't have to find the right engineer. From first demo to production, they work with one person who knows their app.",
+    title: "Translate, don't relay",
+    body: "Clients shouldn't need to speak engineering, and developers shouldn't have to guess what the client meant. I turn each side's language into something the other can act on.",
   },
 ];
 
@@ -244,10 +244,15 @@ function App() {
         <section id="top" className="container hero">
           <div className="hero-main">
             <p className="hero-eyebrow">Yonatan Lurie</p>
-            <h1 className="hero-headline">I help partners build on platforms.</h1>
+            <h1 className="hero-headline">
+              <span>Technical enough to build it.</span>{" "}
+              <span className="hero-headline-muted">Clear enough to explain it.</span>
+            </h1>
             <p className="hero-lede">
-              I'm the engineer between Invent.us and the companies building on it, from the first demo to production,
-              plus the SDK and AI tooling that make that path faster.
+              I sit between the people with the idea and the people writing the code: hands-on in React, TypeScript,
+              and APIs, and able to explain that work in plain language to clients, partners, and non-technical teams.
+              Right now I'm the technical lead for vendor integrations at Invent.us, taking partner teams from first
+              walkthrough to production.
             </p>
             <div className="hero-actions">
               <button className="btn btn--primary" onClick={openContact}>Get in touch</button>
@@ -274,12 +279,12 @@ function App() {
         <section id="how-i-work" className="band" aria-labelledby="how-i-work-title">
           <div className="container">
             <SectionHeading id="how-i-work-title" eyebrow="How I work">
-              Once a partner is introduced, every technical step to production runs through me.
+              From the first conversation to launch, I'm the technical point of contact.
             </SectionHeading>
 
             <div className="lifecycle" data-reveal>
               <div className="lc-handoff">
-                <span className="lc-step-label">Partner manager</span>
+                <span className="lc-step-label">Them</span>
                 <LifecycleStep index={1} {...LIFECYCLE_HANDOFF} />
               </div>
               <div className="lc-owned">
@@ -350,7 +355,8 @@ function App() {
             <p>
               I studied psychology at the University of Washington, then went through App Academy's full-stack
               bootcamp and started building software for UW Finance. That combination turned out to be the job:
-              understand what the people on the other side actually need, then build the thing that gets them there.
+              understand what the people on the other side actually need, explain the technical side in terms they can
+              use, then build the thing that gets them there.
             </p>
             <p>
               Today I do that for the partners building on Invent.us: I demo the platform, get them set up, help them
